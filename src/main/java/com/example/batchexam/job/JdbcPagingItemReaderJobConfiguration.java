@@ -30,7 +30,7 @@ public class JdbcPagingItemReaderJobConfiguration {
     private final StepBuilderFactory stepBuilderFactory;
     private final DataSource dataSource;
 
-    private static final int chunkSize = 10;
+    private static final int chunkSize = 1000;
 
     @Bean
     public Job jdbcPagingItemReaderJob() throws Exception {
